@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://ec2-54-228-250-82.eu-west-1.compute.amazonaws.com:5432/d7el7dg20702ne
+    username: oqmqmoivbuerjl
+    password: 2e9b23665f9ffe174c2e2a9f0ae0a3cb026d59d97d07eb51a714263e282c7704
+    driverClassName: org.postgresql.Driver
+  security:
+    user:
+      name: disvik
+      password: 1234
+server:
+  tomcat:
+    remote_ip_header: x-forwarded-for
+    protocol_header: x-forwarded-proto

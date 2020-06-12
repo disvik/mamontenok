@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Mamontenok</title>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <!-- <nav class="navbar navbar-light" style="background-color: #e3f2fd;"> -->
+    <a class="navbar-brand" href="#" th:href="@{~/user/index}">Мамонтёнок</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+            aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample05">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">О проекте<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{~/user/child_list}"> Анкеты детей</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{~/user/contacts}">Контакты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{~/user/users_list}">Наши спонсоры</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{~/user/donations_list}">Добрые дела</a>
+            </li>
+
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Введите текст" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Поиск</button>
+        </form>
+        <pre> </pre>
+        <a th:href="@{/user/my_account}">  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Мой аккаунт</button> </a>
+        <pre> </pre>
+        <a th:href="@{/logout}">  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Выход</button> </a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>О программе</h2>
+        <p class="lead">
+
+        <p> Благотворительная программа «Мамонтёнок» является самостоятельным независимым проектом.
+            В интернатных учреждениях Украины проживают очень много детей, которым государство предоставило статусы детей-сирот и детей, лишенных родительской опеки, и устроило в заведения, где они проводят свое детство. </p>
+
+        <p> Мы собрали информацию о детях-сиротах из детских домов Одессы с одной лишь целью - помощи им.
+            Основная наша цель в оказании поддержки детям, обеспечении их счастливого детства. Мы рассказываем вам о детишках, о том, что они любят, что заставляет их улыбаться. </p>
+        <p> Если вам понравился ребёнок - вы можете подарить ему улыбку. Любой знак внимания имеет огромный вес.
+            Не обязательно усыновлять ребёнка или брать его на опеку. Вы можете просто сделать ему подарок:
+            подарить краски ребёнку, который любит рисовать, футбольный мяч мальчику, который увлекается спортом. </p>
+        <p> Ведь эти дети лишены минимального внимания, которого безусловно достоин каждый ребенок.
+            Дети - наше будущее. Будущее нашего мира. И ни один ребёнок на всей Земле не заслуживает быть одиноким и несчастным.
+            Никакие богатства мира не стоят слезы ребёнка.</p>
+        <p>Если дети будут улыбаться, мир станет лучше!</p>
+        <img th:src="@{../images/project.jpg}" width="50%" height="60%">
+    </div>
+
+
+
+    <br/>
+
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
